@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
+html{
+    --primary: #174DBA;
+    --gray: #EFF0F3;
+    --white:#FFFFFF;
+    --dark: #505050;
+}
+body{
+    height: 100vh;
+}
+.content{
+    background-color: var(--gray);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px ;
+}
+header{
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 15px;
+}
+img{
+    display: block;
+    width: 200px;
+    padding: 10px;
+
+}
+h2{
+    font-size: 32px;
+    padding: 10px 0 20px 0;
+    color: var(--primary);
+    font-family: 'helveticaMedium';
+}
+.loginArea{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 10px 0 ;
+    color: var(--primary);
+    font-size: 16px;    
+}
+.buttonAreas{
+    display: grid;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom:40px ;
+}
+input{
+    height: 40px;
+    border: var(--primary) solid 1px ;
+    border-radius: 10px;
+    width: 100%;
+}
+input[type="radio"]{
+    width: 20px;
+    margin-right: 5px;
+}
+button{
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    color: var(--white);
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 16px;
+}
+.loginItens{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/*Area de Cadastro*/
+
+.isolatedInfo{
+    color: var(--dark);
+    font-style: 'helveticaMedium';
+}
+
+.registerCard{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 15px;
+    padding: 0 40px;
+}
+
+
+.infoArea{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    color: var(--primary);
+    width: 100%;
+    font-size: 16px;
+
+}
+.inputItens{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    justify-content: space-between;
+}
+.itens{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.checkboxArea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.radio{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.radioItens{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20px;
+}
+
+/* Area do Usuario */
+
+.userCard{
+    background-color: var(--white);
+    
+}
+
+/* Medias */
+
+@media (min-width: 700px) {
+    .card{
+        width: 325px;
+        height: 400px;
+    }
+    
+    .registerCard{
+        width: 700px;
+        
+    }
+    .infoArea{
+        width:625px;
+    }
+    .inputItens{
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+    .itens{
+        width: 48%;
+    }
+    .checkboxArea{
+        width:48%;
+    }
+    .radio{
+        justify-content: space-around;
+    }
+    input[type = "radio"]{
+        width: 13px;
+    }
+    
+}
+@font-face {
+    font-family:'helveticaMedium';
+    src: url('PragmaticaMedium') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/style.css">
+
+        <title>Frontend Test | Cadastre-se</title>
+    </head>
+    <body>
+<!--       <style>
+            body *{
+                border: green solid 2px;
+            }
+        </style>-->
+        <header ><img src="images/logo.png" alt="UpperLogo"></header>
+        <div class="content">
+            <div class="registerCard">
+                <h2>Cadastro</h2>
+                <form class="infoArea">
+
+                    <div class="inputItens"> 
+                        <div class="itens">
+                            <label for="name">Nome Completo</label>
+                            <input type="text"id="name">
+                        </div>
+
+                       <div class="itens">
+                           <label for="email">E-mail</label>
+                           <input type="text"id="email">
+                        </div>
+                    </div>    
+
+                    <div class="inputItens">
+                        <div class="itens">
+                            <label for="name">Estado</label>
+                            <input type="text"id="states">
+                        </div>
+                        
+                        <div class="checkboxArea">                       
+                            <legend>Sexo</legend>
+                            <div class="radio">
+                                
+                                <div class="radioItens">
+                                    <input type="radio"name ="radio" id="fem">
+                                    <label for="fem">Feminino</label>
+                                </div>
+                                
+                                <div class="radioItens">
+                                    <input type="radio"name ="radio" id="masc">
+                                    <label for="masc">Masculino</label>
+                                </div>
+                                
+                                <div class="radioItens">
+                                    <input type="radio"name ="radio" id="other">
+                                    <label for="other">Outro</label>
+                                </div>
+                            </div>                      
+                        </div>
+                    </div>
+                    
+                    <div class="inputItens">
+                        
+                        <div class="itens">
+                            <label for="pass">Senha</label>
+                            <input type="text"id="pass">
+                            <h3 class="isolatedInfo">A senha deve ter no minimo 6 caracteres</h3> 
+                        </div>
+
+                        <div class="itens">
+                            <label for="passConf">Confirmar Senha</label>
+                            <input type="text"id="passConf">
+                        </div>
+                    </div>
+                </form>
+                <div class="buttonAreas">
+                    <button type="button" >CADASTRAR</button>
+                    <h3>Já possui conta ? <a href="index.html">Entre aqui</a></h2>
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+
+</html>
