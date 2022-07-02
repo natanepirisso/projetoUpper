@@ -9,9 +9,12 @@ html{
     --gray: #EFF0F3;
     --white:#FFFFFF;
     --dark: #505050;
+    --newgray:#eff0f311;
+    font-family: 'helveticaMedium',sans-serif;
 }
 body{
     height: 100vh;
+
 }
 .content{
     background-color: var(--gray);
@@ -21,6 +24,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 0 30px ;
+
 }
 header{
     background-color: var(--primary);
@@ -51,7 +55,6 @@ img[src="images/logo.png"]{
     font-size: 32px;
     padding: 10px 0 20px 0;
     color: var(--primary);
-    font-family: 'helveticaMedium';
 }
 .loginArea{
     display: flex;
@@ -83,9 +86,12 @@ button{
     background-color: var(--primary);
     color: var(--white);
     margin-bottom: 10px;
+    font-family: 'helveticaMedium',sans-serif;
+    width: 100%;
 }
 h3{
     font-size: 16px;
+    font-weight: lighter;
 }
 .loginItens{
     display: flex;
@@ -96,8 +102,9 @@ h3{
 /*Area de Cadastro*/
 
 .isolatedInfo{
-    color: var(--dark);
-    font-style: 'helveticaMedium';
+    color: lightgray;
+    font-weight: lighter;
+    font-size: 15px;
 }
 
 .registerCard{
@@ -186,10 +193,14 @@ img[src = "images/profile2.jpg"]{
     height: 100px;
     border-radius: 50%;
 }
+.editLink{
+    padding: 10px 10px 0 0;
+    align-self: flex-end;   
+}
 img[src = "images/edit-icon.png"]{
     width: 30px;
     align-self: flex-end;
-    padding: 10px 10px 0 0;
+
 
 }
 .userTitle{
@@ -205,10 +216,13 @@ img[src = "images/edit-icon.png"]{
     align-self: flex-end ;
     padding-right:100px ;
     color: var(--dark);
+    font-weight: lighter;
 }
 .userEmail{
     color: var(--dark);
     font-size:16px;
+    font-weight: 600;
+
 }
 
 /* Medias */
@@ -253,7 +267,7 @@ img[src = "images/edit-icon.png"]{
 }
 @font-face {
     font-family:'helveticaMedium';
-    src: url('PragmaticaMedium') format('opentype');
+    src: url('PragmaticaMedium.otf') format('opentype');
     font-weight: normal;
-    font-style: normal;
+    font-style: medium ;
 }
