@@ -23,7 +23,7 @@ o projeto teste do Inpeaceapp se baseia basicamente em simular uma realização 
 
 ## Como foi o Processo
 
-olha não vou mentir... foi um desafio pra mim haha. Botei meus conhecimentos em pratica e, dentro desses 3 dias, aprendi como nunca. Com certeza um bom aprendizado que 
+olha não vou mentir... foi um desafio pra mim haha. Botei meus conhecimentos em pratica e, dentro desses 3 dias, aprendi como nunca. Com certeza um bom desafio que 
 me fez arregaçar as mangas.
 
 ### Feito com
@@ -38,7 +38,7 @@ me fez arregaçar as mangas.
 
 ### O que eu aprendi
 
-Tem tanta coisa que eu aprendi nesses dias que eu com certeza não vou conseguir falar de todas... mas vou tentar haha.
+Tem tanta coisa que eu aprendi nesses dias que eu com certeza não vou conseguir falar de todas... então vou citar algumas que foram marcantes pra mim.
 
 **FlexBox**
 
