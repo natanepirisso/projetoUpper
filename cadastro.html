@@ -16,24 +16,24 @@
         <div class="content">
             <div class="registerCard">
                 <h2 class="acessTitle">Cadastro</h2>
-                <form class="infoArea">
+                <form class="infoArea" onsubmit ="registerUser(event)">
 
                     <div class="inputItens"> 
                         <div class="itens">
                             <label for="name">Nome Completo</label>
-                            <input type="text"id="name" name="name">
+                            <input type="text"id="name" name="nameReg" required>
                         </div>
 
                        <div class="itens">
                            <label for="email">E-mail</label>
-                           <input type="text"id="email" name="emailReg">
+                           <input type="text"id="email" name="emailReg" required>
                         </div>
                     </div>    
 
                     <div class="inputItens">
                         <div class="itens">
                             <label for="name">Estado</label>
-                            <input type="text"id="states" name="states">
+                            <input type="text"id="states" name="statesReg" required>
                         </div>
                         
                         <div class="checkboxArea">                       
@@ -41,17 +41,17 @@
                             <div class="radio">
                                 
                                 <div class="radioItens">
-                                    <input type="radio"name ="radio" id="fem">
+                                    <input type="radio"name ="radioReg" id="fem" value="feminino" required>
                                     <label for="fem">Feminino</label>
                                 </div>
                                 
                                 <div class="radioItens">
-                                    <input type="radio"name ="radio" id="masc">
+                                    <input type="radio"name ="radioReg" id="masc" value="masculino" required>
                                     <label for="masc">Masculino</label>
                                 </div>
                                 
                                 <div class="radioItens">
-                                    <input type="radio"name ="radio" id="other">
+                                    <input type="radio"name ="radioReg" id="other" value="outros" required>
                                     <label for="other">Outro</label>
                                 </div>
                             </div>                      
@@ -62,34 +62,60 @@
                         
                         <div class="itens">
                             <label for="pass">Senha</label>
-                            <input type="text"id="pass" name="passReg">
+                            <input type="password"id="pass" name="passReg" required min="6">
                             <h3 class="isolatedInfo">A senha deve ter no minimo 6 caracteres</h3> 
                         </div>
 
                         <div class="itens">
                             <label for="passConf">Confirmar Senha</label>
-                            <input type="text"id="passConf" name="passConf">
+                            <input type="password"id="passConf" name="passConfReg" required min="6">
                         </div>
                     </div>
+                    <button type="submit">CADASTRAR</button>
                 </form>
                 <div class="buttonAreas">
-                    <a href="index.html">
-                        <button type="button" >CADASTRAR</button>
-                    </a>
                     <h3>Já possui conta ? <a href="index.html">Entre aqui</a></h2>
                 </div>
             </div>
         </div>
         <script>
-            function registerUser(){
-                const formData = new formData(document.querySelector('form'))
-                const email = formData.get("#email");
-                const pass =  formData.get("#pass");
-                const setEmail = sessionStorage.setItem('email',email);
-                const setPass = sessionStorage.setItem('pass',pass);
+            function registerUser(event){
+                event.preventDefault();
+                const formData = new FormData(document.querySelector('form'))
+                const pass =  formData.get("passReg");
+                const passConf = formData.get("passConfReg");
+                if (pass !== passConf){
+                    console.log("Senha Diferente.");
+                    return;
+                }
+                if(pass.length < 6 ){
+                    console.log("Senha pequena demais");
+                    return;
+                }
+                const email = formData.get("emailReg");
+                const name = formData.get("nameReg");
+                const states = formData.get("statesReg");
+                const radio = formData.get("radioReg");
 
-                
-
+                const user = {
+                    name: name,
+                    email: email,
+                    states: states,
+                    pass: pass,
+                    radio : radio
+                }
+                let armazenar = sessionStorage.getItem('users')
+                if (armazenar === null){
+                    sessionStorage.setItem('users',JSON.stringify([user]));
+                    return;
+                    
+                }
+                else {
+                    let newVar = JSON.parse(armazenar);
+                    newVar.push(user);
+                    sessionStorage.setItem('users',JSON.stringify(newVar));
+                }
+                window.location.replace("index.html")         
             }
         </script>
     </body>

@@ -10,7 +10,7 @@
     <body>
         <header ><img src="images/logo.png" alt="UpperLogo"></header>
         <div class="content">
-            <form class="card">
+            <form class="card" onsubmit="validateLogin(event)">
                 <h2 class="acessTitle">Acessar</h2>
                 <div class="loginBox">
                     <div class = "loginArea">
@@ -22,25 +22,37 @@
 
                         <div class="loginItens">
                             <label for="pass">Senha</label>
-                            <input type="text" id="pass" name="pass">
+                            <input type="password" id="pass" name="pass">
                         </div>
                     </div>
                     <div class="buttonAreas" >
-                        <a href="lista-usuarios.html">
-                            <button type="button" >ENTRAR</button>
-                        </a>
+                            <button type="submit">ENTRAR</button>
                         <h3>Não possui conta ? <a href="cadastro.html">Cadastre-se aqui</a></h2>
                     </div>
                 </div>
             </form>            
         </div>
         <script>
-            function validateLogin(email,pass){
-                const email = sessionStorage.getItem('emailReg');
-                const pass = sessionStorage.getItem('passReg');
-                if(email){
-
+            
+            function validateLogin(event){
+                event.preventDefault();
+                const formData = new FormData(document.querySelector('form'));
+                const email = formData.get("email");
+                const pass = formData.get("pass");
+                let listUsers = sessionStorage.getItem('users');
+                listUsers = JSON.parse(listUsers);
+                const find = listUsers.find(element => element.email === email);
+                if(find === undefined){
+                    console.log("E-mail não encontrado");
                 }
+                if (find.pass === pass){
+                    window.location.href = 'lista-usuarios.html';
+                }
+                else{
+                    console.log("Senha Incorreta")
+                }
+
+
             }
         </script>
     </body>

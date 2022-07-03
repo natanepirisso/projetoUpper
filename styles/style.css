@@ -56,12 +56,12 @@ img[src="images/logo.png"]{
     padding: 10px 0 20px 0;
     color: var(--primary);
 }
+
 .loginArea{
     display: flex;
     flex-direction: column;
-    padding: 20px 0 10px 0 ;
+    padding: 20px 20px ;
     color: var(--primary);
-    font-size: 16px;    
 }
 .buttonAreas{
     display: grid;
@@ -69,12 +69,18 @@ img[src="images/logo.png"]{
     display: flex;
     flex-direction: column;
     padding-bottom:40px ;
+    font-size: 16px;
+
 }
 input{
     height: 40px;
     border: var(--primary) solid 1px ;
     border-radius: 10px;
     width: 100%;
+}
+input[type= "text"],input[type="password"]{
+    padding-left: 10px;
+    align-self: center;
 }
 input[type="radio"]{
     width: 20px;
@@ -87,11 +93,14 @@ button{
     color: var(--white);
     margin-bottom: 10px;
     font-family: 'helveticaMedium',sans-serif;
-    width: 100%;
+    align-items: center;
+    width: 300px;
+    align-self: center;
 }
 h3{
     font-size: 16px;
     font-weight: lighter;
+    align-self: center;
 }
 .loginItens{
     display: flex;
@@ -121,7 +130,6 @@ h3{
 .infoArea{
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
     color: var(--primary);
     width: 100%;
     font-size: 16px;
