@@ -53,7 +53,7 @@ dificil assim, mas me tomou um tempo desnecessariamente grande) xD.
 **Media Query**
 
 Aprendi também a ser responsivo com o Media Query partindo do pensamento "Mobile First", que tem como ideia pensar primeiramente como a tela irá responder como mobile.
-Ainda tenho muito que aprender sobre essa ferramenta e sobre esse conceito, mas ja consegui tirar algumas faíscas.
+ Ainda tenho muito que aprender sobre essa ferramenta e sobre esse conceito, mas ja consegui tirar algumas faíscas.
 
 **JavaScript**
 
