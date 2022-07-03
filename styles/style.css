@@ -1,3 +1,5 @@
+/* Nota: Pequenas coisas foram alteradas apenas para ficar de acordo com a proposta das telas. Tamanho da fonte e cor diferente são exemplos. */
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +11,6 @@ html{
     --gray: #EFF0F3;
     --white:#FFFFFF;
     --dark: #505050;
-    --newgray:#eff0f311;
     font-family: 'helveticaMedium',sans-serif;
 }
 body{
@@ -34,6 +35,23 @@ header{
     position: fixed;
     width: 100%;
 }
+img[src="images/logo.png"]{
+    display: block;
+    width: 200px;
+    padding: 10px;
+    
+}
+h3{
+    font-size: 14px; /* Fonte ajustada para ter um tamanho mais interessante*/
+    font-weight: lighter;
+    align-self: center;
+}
+input{
+    height: 40px;
+    border: var(--primary) solid 1px ;
+    border-radius: 10px;
+    width: 100%;
+}
 .card{
     display: flex;
     flex-direction: column;
@@ -45,15 +63,9 @@ header{
     padding: 0 20px;
     border-radius: 15px;
 }
-img[src="images/logo.png"]{
-    display: block;
-    width: 200px;
-    padding: 10px;
-
-}
 .acessTitle{
-    font-size: 32px;
-    padding: 10px 0 20px 0;
+    font-size: 28px;
+    padding: 20px 0;
     color: var(--primary);
 }
 
@@ -62,6 +74,7 @@ img[src="images/logo.png"]{
     flex-direction: column;
     padding: 20px 20px ;
     color: var(--primary);
+    width: 100%;
 }
 .buttonAreas{
     display: grid;
@@ -69,14 +82,7 @@ img[src="images/logo.png"]{
     display: flex;
     flex-direction: column;
     padding-bottom:40px ;
-    font-size: 16px;
 
-}
-input{
-    height: 40px;
-    border: var(--primary) solid 1px ;
-    border-radius: 10px;
-    width: 100%;
 }
 input[type= "text"],input[type="password"]{
     padding-left: 10px;
@@ -97,23 +103,29 @@ button{
     width: 300px;
     align-self: center;
 }
-h3{
-    font-size: 16px;
-    font-weight: lighter;
-    align-self: center;
-}
 .loginItens{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    padding: 0 40px;
+}
+.btnLogin{
+    width: 260px;
 }
 
 /*Area de Cadastro*/
 
+.registerTitle{
+    font-size: 28px;
+    padding: 20px 0 30px;
+    color: var(--primary);
+}
+
 .isolatedInfo{
-    color: lightgray;
+    color: lightgray; /* A cor dada ficava muita apagada nesse texto, então fiz um pequeno ajuste da cor.*/
     font-weight: lighter;
     font-size: 15px;
+    align-self: flex-start;
 }
 
 .registerCard{
@@ -163,6 +175,9 @@ h3{
     flex-direction: row;
     align-items: center;
     padding-right: 20px;
+}
+.loginText{
+    padding-bottom:40px ;
 }
 
 /* Area do Usuario */
@@ -216,7 +231,7 @@ img[src = "images/edit-icon.png"]{
     font-size: 48px;
     color: var(--primary);
     align-self: flex-start;
-    padding-left: 90px;
+    padding-top: 40px;
 
 }
 .userInfo{
@@ -224,7 +239,7 @@ img[src = "images/edit-icon.png"]{
     align-self: flex-end ;
     padding-right:100px ;
     color: var(--dark);
-    font-weight: lighter;
+    font-weight: bold;
 }
 .userEmail{
     color: var(--dark);
@@ -270,12 +285,15 @@ img[src = "images/edit-icon.png"]{
     .cards{
         width: 532px;
     }
+    .userTitle{
+        padding: 0 0 0 60px;
+    }
 
     
 }
 @font-face {
     font-family:'helveticaMedium';
-    src: url('PragmaticaMedium.otf') format('opentype');
+    src: url('fonts/PragmaticaMedium.otf') format('opentype');
     font-weight: normal;
     font-style: medium ;
 }
