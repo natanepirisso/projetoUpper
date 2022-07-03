@@ -47,8 +47,8 @@ que consegui pregar.
 
 **External Fonts**
 
-Aprendi da pior forma possivel como baixar uma fonte e torna-la utilizavel para o font-family. *Que dor de cabeça* foi tentar resolver essa bomba(que nem é tão
-dificil assim mas que me tomou um tempo desnecessariamente grande) xD.
+Aprendi da pior forma possivel como baixar uma fonte e torna-la utilizável para o font-family. **Que dor de cabeça** foi tentar resolver essa bomba (que nem é tão
+dificil assim, mas me tomou um tempo desnecessariamente grande) xD.
 
 **Media Query**
 
