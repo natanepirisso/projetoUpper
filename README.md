@@ -62,8 +62,7 @@ linguagem proporciona te faz ficar no minimo exausto. Porêm, quando entendemos 
 de compreender e modelar.
 
 **Nota:**
-  Vale ressaltar também que aprendi muitas outras coisas dentro de CSS e HTML... pequenas coisinhas como usar o "required" no <input> ou o "onsubmit" no <form> fizeram
-  toda a diferença dentro do projeto.
+  Vale ressaltar também que aprendi muitas outras coisas dentro de CSS e HTML... pequenas coisinhas como usar o "required" no < input > ou o "onsubmit" no < form > fizeram toda a diferença dentro do projeto.
   
 ## Autor
 
