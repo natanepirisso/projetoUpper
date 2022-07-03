@@ -70,7 +70,7 @@ de compreender e modelar.
 
 ## Agradecimentos
 
-Gostaria muito de agradecer à uppersoft por me proporcionar essa oportunidade (independente do resultado). Toda essa caminhada está sendo imensamente engradecedora
+Gostaria muito de agradecer à Uppersoft por me proporcionar essa oportunidade (independente do resultado). Toda essa caminhada está sendo imensamente engradecedora
 pra mim !!! Obrigado de verdade. 
 Gostaria também de agradecer ao meu mentor viniciusorisso, que esteve esse tempo todo puxando minha orelha e me ajudando em todo esse corre. Isso aqui
 não seria possível se não fosse por você rapaze. 
