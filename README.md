@@ -61,7 +61,7 @@ Foi a primeira vez que de fato comecei a praticar JavaScript em um projeto Web e
 linguagem proporciona te faz ficar no minimo exausto. Porêm, quando entendemos como cada coisa funciona dentro daquela função, evento ou método, tudo fica mais facil 
 de compreender e modelar.
 
-**Nota**
+**Nota:**
   Vale ressaltar também que aprendi muitas outras coisas dentro de CSS e HTML... pequenas coisinhas como usar o "required" no <input> ou o "onsubmit" no <form> fizeram
   toda a diferença dentro do projeto.
   
